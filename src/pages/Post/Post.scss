@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+
+.post-detail-container {
+  @include page-container;
+  
+  .post-header {
+    @include header-container;
+    
+    .post-title-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+      h1 {
+        @include title-text;
+      }
+      
+      h2 {
+        color: $text-light;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+      }
+      
+      .post-author {
+        color: $text-lighter;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  .post-content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    .post-detail {
+      @include flex-column;
+      gap: 20px;
+    }
+  }
+  
+  .comments-section {
+    .comments-header {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .comments-list {
+      @include flex-column;
+      gap: 15px;
+      padding-left: 25px;
+      
+      .no-comments {
+        text-align: center;
+        padding: 20px;
+        color: $text-tertiary;
+        @include card-container;
+        width: 95%;
+      }
+    }
+  }
+  
+  .error-message {
+    color: #ff0000;
+    text-align: center;
+    padding: 20px;
+  }
+} 

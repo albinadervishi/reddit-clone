@@ -1,0 +1,21 @@
+@import '../../styles.scss';
+
+.loading-container {
+    @include flex-center;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    
+    svg {
+      animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

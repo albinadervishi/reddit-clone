@@ -1,0 +1,34 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    background-color: #424259;
+    padding: 10px 20px;
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      
+      h1 {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      h2 {
+        color: #ccc;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      
+      .author-info {
+        color: #aaa;
+        font-size: 14px;
+
+        .authorName {
+            color: #3f6cd4;
+            font-size: 14px;
+        }
+      }
+    }
+  }

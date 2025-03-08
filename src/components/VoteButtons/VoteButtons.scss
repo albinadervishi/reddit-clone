@@ -1,0 +1,35 @@
+.vote-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 40px;
+    justify-content: center;
+    
+    .vote-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #666;
+      
+      &.active {
+        &.up {
+          color: #4bde86;
+        }
+        
+        &.down {
+          color: #f5475e;
+        }
+      }
+      
+      &:hover {
+        color: #333;
+      }
+    }
+    
+    .vote-count {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  }

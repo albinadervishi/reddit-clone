@@ -1,0 +1,79 @@
+@import '../../styles.scss';
+
+.card {
+  display: flex;
+  @include card-container;
+  
+  &.comment-card {
+    width: 95%;
+  }
+  
+  .vote-buttons {
+    @include flex-column;
+    align-items: center;
+    padding: 10px;
+    min-width: 40px;
+    justify-content: center;
+    
+    .vote-button {
+      color: $text-tertiary;
+      
+      &.active {
+        &.up {
+          color: $upvote-color;
+        }
+        
+        &.down {
+          color: $downvote-color;
+        }
+      }
+      
+      &:hover {
+        color: $text-secondary;
+      }
+    }
+    
+    .vote-count {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  }
+  
+  .card-content {
+    padding: 15px;
+    flex-grow: 1;
+    
+    &:hover {
+      background-color: $hover-background;
+    }
+    
+    .card-title {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      font-weight: medium;
+      
+      .comment-card & {
+        font-size: 16px;
+      }
+    }
+    
+    .card-body {
+      margin: 0 0 15px 0;
+      font-size: 14px;
+      color: $text-secondary;
+    }
+    
+    .card-meta {
+      display: flex;
+      gap: 10px;
+      font-size: 12px;
+      color: $text-tertiary;
+      
+      .card-author {
+        font-weight: 500;
+        color: $accent-color;
+      }
+    }
+  }
+} 
