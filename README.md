@@ -20,7 +20,7 @@
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/reddit-clone.git
+   git clone https://github.com/albinadervishi/reddit-clone.git
    cd reddit-clone
    ```
 
